@@ -7,7 +7,7 @@ In vot-old, modify 'format = '%.3f'' in report/matrix2html.m.
 
 In vot-old, modify  report/report_cache.m to accommodate the loading of cache files generated from other people.
 
-In vot-old, 
+In vot-old, modify report/create_report_context.m to set the raw figs be allowed to saved in folder raw.
 
 In vot-toolkit-binary (2016), modify stacks/stack_vot2016.m to choose between 'ar' (report/report_ar.m) and 'ar_rank' (report/report_ar_rank.m).
 
@@ -26,5 +26,7 @@ In vot-toolkit-binary (2016), always set like this:
  - table_orientation = get_global_variable('report_ar_table_orientation', 'trackers'); % trackers, selectors, trackerscores, selectorscores
 
 In vot-toolkit-binary (2016), modify report/plot_ar.m, report/plot_ranking, report/report_expected_overlap.m, report/report_overlap.m to get legends, ARrank plots, ARraw plots, EAO graph/curves, and AO curves.
+
+In vot-toolkit-binary (2016), modify report/document_context.m to set the raw figs be allowed to saved in folder raw.
 
 打开fig，打开属性编辑器，导出设置到12cm*12cm，然后再调整页面，再设置打印预览，最后保存pdf
